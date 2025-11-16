@@ -31,6 +31,13 @@ export default function Portfolio() {
       title: "",
       author: "M.X.JUMAKULOVA",
       pdfUrl: "/Mavludaxon Xosilovna. slayd for muhokama.pdf"
+    },
+    {
+      id: 4,
+      image: "/images/4book.jpg",
+      title: "",
+      author: "M.X.JUMAKULOVA",
+      pdfUrl: "USLUBIY QO'LLANMA (3).pdf"
     }
   ];
 
