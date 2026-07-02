@@ -184,7 +184,7 @@ function Header() {
                 to={"/portfolio"}
                 onClick={closeMenu}
               >
-                Portfolio
+                Nashr ishlari
               </NavLink>
               <div
                 className="nav-link dropdown"
