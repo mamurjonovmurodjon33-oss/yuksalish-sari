@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yuksalish sari | Test Preview</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        color: #172033;
+        background: #f7f8fb;
+        font-family: Arial, sans-serif;
+      }
+
+      .hero {
+        min-height: 430px;
+        display: flex;
+        align-items: center;
+        color: #ffffff;
+        background:
+          linear-gradient(120deg, rgba(18, 72, 154, 0.88), rgba(20, 119, 120, 0.74)),
+          url("../public/images/banner-img.webp") center / cover no-repeat;
+      }
+
+      .container {
+        width: min(1120px, calc(100% - 32px));
+        margin: 0 auto;
+      }
+
+      .hero-content {
+        max-width: 760px;
+      }
+
+      .label {
+        display: inline-flex;
+        padding: 8px 12px;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        border-radius: 999px;
+        margin-bottom: 18px;
+        background: rgba(255, 255, 255, 0.14);
+        font-size: 14px;
+        font-weight: 700;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(34px, 6vw, 62px);
+        line-height: 1.08;
+      }
+
+      .hero p {
+        max-width: 700px;
+        margin: 20px 0 0;
+        font-size: 20px;
+        line-height: 1.55;
+      }
+
+      main {
+        padding: 48px 0 64px;
+      }
+
+      .panel,
+      .card {
+        border: 1px solid #d8dee9;
+        border-radius: 8px;
+        background: #ffffff;
+      }
+
+      .panel {
+        padding: 28px;
+      }
+
+      h2,
+      h3 {
+        margin: 0 0 12px;
+      }
+
+      .panel p,
+      .card p {
+        margin: 0;
+        color: #4c596f;
+        line-height: 1.6;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px;
+        margin-top: 24px;
+      }
+
+      .card {
+        min-height: 160px;
+        padding: 24px;
+      }
+
+      .card h3 {
+        color: #12489a;
+      }
+
+      @media (max-width: 760px) {
+        .hero {
+          min-height: 370px;
+        }
+
+        .hero p {
+          font-size: 18px;
+        }
+
+        .grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="hero">
+      <div class="container hero-content">
+        <span class="label">Public test preview</span>
+        <h1>Yuksalish sari test website</h1>
+        <p>
+          This sample page is for reviewing website updates before publishing
+          approved changes to the live domain.
+        </p>
+      </div>
+    </section>
+
+    <main class="container">
+      <section class="panel">
+        <h2>Preview workflow</h2>
+        <p>
+          New text, photos, PDFs, and layout updates can be prepared here first.
+          After the client approves the preview, the approved version can be
+          moved to the main website.
+        </p>
+      </section>
+
+      <section class="grid" aria-label="Sample website sections">
+        <article class="card">
+          <h3>Home content</h3>
+          <p>Sample hero text, main message, and call-to-action area.</p>
+        </article>
+        <article class="card">
+          <h3>About section</h3>
+          <p>Profile details, biography, and educational information.</p>
+        </article>
+        <article class="card">
+          <h3>Portfolio</h3>
+          <p>PDF publications, books, articles, and research materials.</p>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
