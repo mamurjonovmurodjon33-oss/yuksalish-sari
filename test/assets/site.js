@@ -36,7 +36,7 @@ progress.className = "scroll-progress";
 document.body.appendChild(progress);
 
 const revealTargets = document.querySelectorAll(
-  ".section-head, .card, .service-card, .portfolio-card, .about-band, .grid-2, .policy-card, .contact-card"
+  ".section-head, .card, .service-card, .portfolio-card, .about-band, .operations-grid, .process-list div, .grid-2, .policy-card, .contact-card, .hero-proof-strip article"
 );
 
 revealTargets.forEach((target, index) => {
