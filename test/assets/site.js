@@ -18,10 +18,12 @@ document.querySelectorAll("[data-page-link]").forEach((link) => {
 
 const navToggle = document.querySelector(".nav-toggle");
 const nav = document.querySelector(".site-nav");
+const header = document.querySelector(".site-header");
 
 if (navToggle && nav) {
   navToggle.addEventListener("click", () => {
     nav.classList.toggle("is-open");
+    navToggle.classList.toggle("is-active", nav.classList.contains("is-open"));
     navToggle.setAttribute("aria-expanded", nav.classList.contains("is-open"));
   });
 }
@@ -36,7 +38,7 @@ progress.className = "scroll-progress";
 document.body.appendChild(progress);
 
 const revealTargets = document.querySelectorAll(
-  ".section-head, .card, .service-card, .portfolio-card, .about-band, .operations-grid, .process-list div, .grid-2, .policy-card, .contact-card, .hero-proof-strip article"
+  ".section-head, .card, .service-card, .portfolio-card, .about-band, .operations-grid, .process-list div, .grid-2, .policy-card, .contact-card, .hero-proof-strip article, .page-hero-grid, .page-hero-visual"
 );
 
 revealTargets.forEach((target, index) => {
@@ -58,7 +60,7 @@ const observer = new IntersectionObserver(
 
 revealTargets.forEach((target) => observer.observe(target));
 
-document.querySelectorAll(".card, .service-card, .portfolio-card, .hero-panel").forEach((card) => {
+document.querySelectorAll(".card, .service-card, .portfolio-card, .hero-panel, .page-hero-visual").forEach((card) => {
   card.dataset.tilt = "";
   card.addEventListener("pointermove", (event) => {
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
@@ -76,6 +78,9 @@ const updateMotion = () => {
   const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
   const ratio = maxScroll > 0 ? window.scrollY / maxScroll : 0;
   document.documentElement.style.setProperty("--scroll-progress", ratio.toString());
+  if (header) {
+    header.classList.toggle("is-scrolled", window.scrollY > 14);
+  }
 };
 
 window.addEventListener("scroll", updateMotion, { passive: true });
