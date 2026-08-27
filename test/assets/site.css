@@ -74,7 +74,7 @@ a {
   top: 0;
   z-index: 20;
   border-bottom: 1px solid rgba(219, 228, 238, 0.56);
-  background: rgba(255, 255, 255, 0.88);
+  background: rgb(237, 237, 237);
   box-shadow: 0 0 0 rgba(8, 20, 37, 0);
   backdrop-filter: blur(18px);
   transition: background 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;
@@ -82,7 +82,7 @@ a {
 
 .site-header.is-scrolled {
   border-color: rgba(20, 84, 201, 0.12);
-  background: rgba(255, 255, 255, 0.94);
+  background: rgb(237, 237, 237);
   box-shadow: 0 18px 50px rgba(8, 20, 37, 0.12);
 }
 
