@@ -8,7 +8,10 @@
     <link rel="icon" href="assets/images/valoria-logo.png" />
     <link rel="preload" as="image" href="assets/images/hero-command-center.png" />
     <link rel="preload" as="image" href="assets/images/growth-operations.png" />
-    <link rel="stylesheet" href="assets/site.css" />
+    <script>document.documentElement.classList.add("preload");setTimeout(function(){document.documentElement.classList.add("styles-ready");},2500);</script>
+    <style>html.preload body{opacity:0}html.preload::before{position:fixed;inset:0;z-index:9999;display:grid;place-items:center;background:rgb(237,237,237);color:#081425;font:800 28px Arial,sans-serif;letter-spacing:0;content:"VALORIA"}html.preload.styles-ready body{opacity:1;transition:opacity .18s ease}html.preload.styles-ready::before{opacity:0;pointer-events:none;transition:opacity .18s ease}</style>
+    <noscript><style>html.preload body{opacity:1}html.preload::before{display:none}</style></noscript>
+    <link rel="stylesheet" href="assets/site.css" onload="document.documentElement.classList.add('styles-ready')" />
   </head>
   <body>
     <header class="site-header">
