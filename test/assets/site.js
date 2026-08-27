@@ -1,9 +1,18 @@
-const previewPrefix =
+const defaultPreviewPrefix =
   "https://htmlpreview.github.io/?https://github.com/mamurjonovmurodjon33-oss/yuksalish-sari/blob/test-site/test/";
+
+const getPreviewPrefix = () => {
+  const marker = "/test/";
+  const markerIndex = window.location.href.indexOf(marker);
+  if (window.location.hostname === "htmlpreview.github.io" && markerIndex !== -1) {
+    return window.location.href.slice(0, markerIndex + marker.length);
+  }
+  return defaultPreviewPrefix;
+};
 
 document.querySelectorAll("[data-page-link]").forEach((link) => {
   if (window.location.hostname === "htmlpreview.github.io") {
-    link.href = previewPrefix + link.dataset.pageLink;
+    link.href = getPreviewPrefix() + link.dataset.pageLink;
   }
 });
 
