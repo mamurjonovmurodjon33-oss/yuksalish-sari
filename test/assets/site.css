@@ -1045,6 +1045,7 @@ h3 {
 .footer-links {
   display: grid;
   gap: 10px;
+  margin-top: 15px;
 }
 
 .footer-bottom {
