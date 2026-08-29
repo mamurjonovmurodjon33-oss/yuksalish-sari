@@ -1,52 +1,184 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" class="preload">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/jpg+xml" href="images/logo.jpg" />
-    <meta
-      name="Pedagogik-psixologik ta’sir usuli bo‘lib, o‘quvchilar muvaffaqiyatini qo‘llab-quvvatlash, kuchli tomonlarini e’tirof etish, faoliyatiga turtki berish orqali rejalashtirilgan ta’lim natijasiga erishish yo‘lidir."
-      content="Saytingiz haqida qisqacha va aniq tavsif."
-    />
-    <meta name="keywords" content="ragbatlantirish, metod, yuksalish sari, yuksalish, yuksalish-sari uz ,sari, mavludaxon, Xosilovna, tadqiqot" />
-    <meta name="author" content="Ismingiz yoki kompaniya nomi" />
-
-    <!-- Robots uchun (indekslash va follow qilish) -->
-    <meta name="robots" content="index, follow" />
-
-    <!-- Open Graph - Facebook va boshqalar uchun -->
-    <meta property="og:title" content="Sahifa nomi" />
-    <meta property="og:description" content="Rag'batlantirish metodi" />
-    <meta property="og:image" content="https://www.yuksalish-sari.uz/images/logo-bg.png" />
-    <meta property="og:url" content="https://www.yuksalish-sari.uz" />
-    <meta property="og:type" content="website" />
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Sahifa nomi" />
-    <meta name="twitter:description" content="Sahifaning qisqacha tavsifi" />
-    <meta name="twitter:image" content="https://www.yuksalish-sari.uz/images/logo-bg.png" />
-    <!-- <meta name="twitter:site" content="@username" /> -->
-
-    <!-- Favicon (brauzer oynasidagi ikonka) -->
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Umarjon Travel",
-        "url": "https://yuksalish-sari.uz",  
-        "logo": "https://yuksalish-sari.uz/images/logo.png"
-      }
-      </script>
-      
-    <title>Yuksalish Sari</title>
+    <title>VALORIA | IT Services and Digital Growth</title>
+    <meta name="description" content="VALORIA Foreign Enterprise LLC provides IT services, SEO, paid ads, web development, branding, and digital growth packages from Tashkent, Uzbekistan." />
+    <link rel="icon" href="assets/images/valoria-logo.png" />
+    <link rel="preload" as="image" href="assets/images/hero-command-center.png" />
+    <link rel="preload" as="image" href="assets/images/growth-operations.png" />
+    <style>html.preload body{visibility:hidden;opacity:0}html.preload::before{position:fixed;inset:0;z-index:9999;display:grid;place-items:center;background:rgb(237,237,237);color:#081425;font:800 28px Arial,sans-serif;letter-spacing:0;content:"VALORIA"}html.preload.styles-ready body{visibility:visible;opacity:1;transition:opacity .18s ease}html.preload.styles-ready::before{opacity:0;pointer-events:none;transition:opacity .18s ease}</style>
+    <noscript><style>html.preload body{visibility:visible;opacity:1}html.preload::before{display:none}</style></noscript>
+    <script>setTimeout(function(){document.documentElement.classList.add("styles-ready");},2500);</script>
+    <link rel="stylesheet" href="assets/site.css?v=20260829-live" onload="document.documentElement.classList.add('styles-ready')" />
   </head>
   <body>
-    <div class="wrapper"></div>
-    <script type="module" src="/src/main.jsx"></script>
-    
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" data-page-link="index.html"><img src="assets/images/valoria-logo.png" alt="VALORIA IT Services" /></a>
+        <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+        <nav class="site-nav" aria-label="Main navigation">
+          <a class="active" href="index.html" data-page-link="index.html">Home</a>
+          <a href="about.html" data-page-link="about.html">About</a>
+          <a href="services.html" data-page-link="services.html">Services</a>
+          <a href="portfolio.html" data-page-link="portfolio.html">Portfolio</a>
+          <a href="contact.html" data-page-link="contact.html">Contact Us</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero">
+      <img class="hero-bg-image" src="assets/images/hero-command-center.png" alt="Premium digital analytics command center with campaign dashboards and growth charts" />
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">IT services and digital growth</span>
+          <h1>Build a smarter digital presence with VALORIA.</h1>
+          <p class="lead">We help ambitious companies improve visibility, launch stronger websites, run better campaigns, and turn online traffic into qualified business opportunities.</p>
+          <div class="hero-actions">
+            <a class="btn" href="services.html" data-page-link="services.html">View Packages</a>
+            <a class="btn secondary" href="https://wa.me/998940563533">WhatsApp: +998 94 056 35 33</a>
+          </div>
+        </div>
+        <aside class="hero-showcase" aria-label="VALORIA performance highlights">
+          <div class="hero-panel">
+            <div class="metric-row">
+              <div class="metric"><strong>15</strong><span>Service packages</span></div>
+              <div class="metric"><strong>$300+</strong><span>Starting budget</span></div>
+              <div class="metric"><strong>360</strong><span>Strategy and delivery</span></div>
+              <div class="metric"><strong>24/7</strong><span>Digital presence</span></div>
+            </div>
+          </div>
+        </aside>
+      </div>
+      <div class="container hero-proof-strip" aria-label="VALORIA service highlights">
+        <article>
+          <img src="assets/images/case-seo.png" alt="SEO performance preview" />
+          <div><strong>Search visibility</strong><span>Audits, keywords, content, local SEO</span></div>
+        </article>
+        <article>
+          <img src="assets/images/case-ads.png" alt="Paid media dashboard preview" />
+          <div><strong>Campaign systems</strong><span>Meta, Google, retargeting, reporting</span></div>
+        </article>
+        <article>
+          <img src="assets/images/case-web.png" alt="Website interface preview" />
+          <div><strong>Web conversion</strong><span>Modern pages, funnels, UI/UX</span></div>
+        </article>
+      </div>
+    </section>
+
+    <main>
+      <section class="section">
+        <div class="container section-head">
+          <div>
+            <span class="section-eyebrow eyebrow">What we do</span>
+            <h2>Digital services built around measurable outcomes.</h2>
+          </div>
+          <p>From SEO foundations to full digital growth packages, VALORIA combines planning, creative execution, tracking, and continuous optimization.</p>
+        </div>
+        <div class="container grid-3 visual-cards">
+          <article class="card service-visual-card"><img src="assets/images/case-seo.png" alt="SEO growth dashboard" /><span class="icon-mark">SEO</span><h3>Search visibility</h3><p>Technical audits, on-page optimization, content planning, and local search improvements designed to increase qualified organic traffic.</p></article>
+          <article class="card service-visual-card"><img src="assets/images/case-ads.png" alt="Paid advertising analytics dashboard" /><span class="icon-mark">ADS</span><h3>Performance campaigns</h3><p>Google, Meta, and retargeting campaigns structured for better leads, clearer reporting, and smarter budget allocation.</p></article>
+          <article class="card service-visual-card"><img src="assets/images/case-web.png" alt="Website design interface preview" /><span class="icon-mark">WEB</span><h3>Websites and funnels</h3><p>Business websites, landing pages, UI/UX, and e-commerce experiences that look professional and support conversion.</p></article>
+        </div>
+      </section>
+
+      <section class="section operations-section">
+        <div class="container operations-grid">
+          <div>
+            <span class="section-eyebrow eyebrow">Growth operations</span>
+            <h2>One connected system for traffic, design, campaigns, and follow-up.</h2>
+            <p>VALORIA organizes digital work into clear stages, so each service package feeds the next business outcome: stronger visibility, better landing pages, cleaner campaign tracking, and faster response through WhatsApp-first contact flows.</p>
+            <div class="process-list">
+              <div><strong>01</strong><span>Audit the current website, search presence, and campaign data.</span></div>
+              <div><strong>02</strong><span>Build the pages, content, creative assets, and tracking foundations.</span></div>
+              <div><strong>03</strong><span>Optimize monthly using reports, lead quality, and conversion signals.</span></div>
+            </div>
+          </div>
+          <figure class="operations-visual">
+            <img src="assets/images/growth-operations.png" alt="Digital growth operations dashboards and automation panels" />
+          </figure>
+        </div>
+      </section>
+
+      <section class="section alt">
+        <div class="container about-band">
+          <div class="image-panel"><img src="assets/images/hero-dashboard.png" alt="VALORIA digital growth dashboard preview" /></div>
+          <div>
+            <span class="section-eyebrow eyebrow">About VALORIA</span>
+            <h2>A Tashkent-based partner for digital execution.</h2>
+            <p>VALORIA Foreign Enterprise LLC supports companies that need a practical technology and marketing team without building every capability in-house. We bring structure to websites, analytics, paid media, SEO, content, and growth systems.</p>
+            <ul class="check-list">
+              <li>Clear digital strategy before execution begins</li>
+              <li>Professional pages, campaigns, and content assets</li>
+              <li>Monthly reporting focused on actions and results</li>
+            </ul>
+            <div class="section-actions">
+              <a class="btn" href="about.html" data-page-link="about.html">Learn About Us</a>
+              <a class="btn light" href="portfolio.html" data-page-link="portfolio.html">See Portfolio</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container section-head">
+          <div>
+            <span class="section-eyebrow eyebrow">Popular packages</span>
+            <h2>Start lean, then scale what works.</h2>
+          </div>
+          <a class="btn light" href="services.html" data-page-link="services.html">All Services</a>
+        </div>
+        <div class="container service-grid">
+          <article class="service-card package-card"><img src="assets/images/case-seo.png" alt="SEO package preview" /><div class="service-top"><h3>SEO Starter</h3><span class="price">$300</span></div><p>Core SEO setup for a business website that needs stronger search foundations.</p><ul><li>Site audit</li><li>Keyword map</li><li>On-page fixes</li></ul></article>
+          <article class="service-card package-card"><img src="assets/images/case-web.png" alt="Landing page package preview" /><div class="service-top"><h3>Landing Page Design</h3><span class="price">$750</span></div><p>A focused page for campaigns, lead generation, or a new service launch.</p><ul><li>Conversion layout</li><li>Responsive design</li><li>CTA structure</li></ul></article>
+          <article class="service-card package-card"><img src="assets/images/growth-operations.png" alt="Full digital growth package preview" /><div class="service-top"><h3>Full Digital Growth</h3><span class="price">$1500</span></div><p>A combined strategy package for traffic, campaigns, content, and reporting.</p><ul><li>SEO and ads plan</li><li>Creative assets</li><li>Monthly dashboard</li></ul></article>
+        </div>
+      </section>
+
+      <section class="section alt">
+        <div class="container section-head">
+          <div>
+            <span class="section-eyebrow eyebrow">Selected work</span>
+            <h2>Portfolio concepts for modern service brands.</h2>
+          </div>
+          <p>These original case-study previews show the types of outcomes VALORIA can package for client review: visibility, ads, conversion, and automation.</p>
+        </div>
+        <div class="container portfolio-grid">
+          <article class="portfolio-card"><img src="assets/images/case-seo.png" alt="SEO growth dashboard case study" /><div class="portfolio-body"><div class="tag-row"><span class="tag">SEO</span><span class="tag">Analytics</span></div><h3>Organic growth sprint</h3><p>Search audit, content plan, technical improvements, and monthly performance reporting.</p></div></article>
+          <article class="portfolio-card"><img src="assets/images/case-ads.png" alt="Paid media campaign case study" /><div class="portfolio-body"><div class="tag-row"><span class="tag">Meta Ads</span><span class="tag">ROAS</span></div><h3>Paid campaign rebuild</h3><p>Audience structure, creative testing, retargeting, and reporting for better budget control.</p></div></article>
+          <article class="portfolio-card"><img src="assets/images/case-web.png" alt="Website development case study" /><div class="portfolio-body"><div class="tag-row"><span class="tag">Web Design</span><span class="tag">UX</span></div><h3>Service website refresh</h3><p>A professional web experience with clearer messaging and stronger contact pathways.</p></div></article>
+        </div>
+      </section>
+
+      <section class="section contact-visual-section">
+        <div class="container grid-2">
+          <div>
+            <span class="section-eyebrow eyebrow">Ready to discuss?</span>
+            <h2>Share your goals and we will recommend the right package.</h2>
+            <p>Use WhatsApp for fast discussion, or send a request through the contact page. We can prepare a phased plan for SEO, ads, websites, and long-term digital growth.</p>
+          </div>
+          <div class="contact-card">
+            <h3>VALORIA Foreign Enterprise LLC</h3>
+            <p>64a Labzak Street, Labzak MFY, Shaykhantakhur District, Tashkent, Uzbekistan</p>
+            <div class="section-actions">
+              <a class="btn" href="https://wa.me/998940563533">Message on WhatsApp</a>
+              <a class="btn secondary" href="contact.html" data-page-link="contact.html">Contact Us</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div><img class="footer-logo" src="assets/images/valoria-logo.png" alt="VALORIA" /><p>IT services, digital marketing, website development, and growth systems for modern companies.</p></div>
+        <div><h3>Company</h3><div class="footer-links"><a href="about.html" data-page-link="about.html">About</a><a href="services.html" data-page-link="services.html">Services</a><a href="portfolio.html" data-page-link="portfolio.html">Portfolio</a><a href="contact.html" data-page-link="contact.html">Contact Us</a></div></div>
+        <div><h3>Policies</h3><div class="footer-links"><a href="privacy-policy.html" data-page-link="privacy-policy.html">Privacy Policy</a><a href="terms-and-conditions.html" data-page-link="terms-and-conditions.html">Terms & Conditions</a><a href="refund-policy.html" data-page-link="refund-policy.html">Refund Policy</a></div></div>
+        <div><h3>Contact</h3><p>WhatsApp: +998 94 056 35 33</p><p>64a Labzak Street, Tashkent, Uzbekistan</p></div>
+      </div>
+      <div class="container footer-bottom"><span>&copy; <span data-year></span> VALORIA Foreign Enterprise LLC.</span><span>Professional IT services preview website.</span></div>
+    </footer>
+    <script defer src="/valoria-site.js?v=20260829-live"></script>
   </body>
 </html>
